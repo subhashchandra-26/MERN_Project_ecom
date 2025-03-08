@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
-import { AuthContext } from '../context/AuthContext'
+import { AuthContext } from '../context/Authcontext'
 import { useNavigate } from 'react-router-dom'
 export default function Cart() {
     const [cart, setCart] = useState([])
