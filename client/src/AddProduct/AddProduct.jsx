@@ -13,7 +13,7 @@ export default function AddProduct() {
     function addProduct(e) {
         e.preventDefault()
         console.log(formData)
-        axios.post("http://localhost:5000/api/product/add", formData, {
+        axios.post("https://mern-project-ecom-5757.onrender.com/api/product/add", formData, {
             headers: { Authorization: `Bearer ${user.token}` }
         })
             .then((res) => {
